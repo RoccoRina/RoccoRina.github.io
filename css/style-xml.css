@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "four";
+    src: url("FONTS/four.ttf") format("truetype");
+}
+
+FIO, ADRESS, TELEPHONE {
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: four;
+    font-size: 90%;
+    color: black;
+}

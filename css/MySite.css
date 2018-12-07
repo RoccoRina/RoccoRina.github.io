@@ -1,0 +1,524 @@
+@font-face {
+    font-family: "China";
+    src: url("FONTS/China.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "one";
+    src: url("ofont.ru_ROSA ArionWC.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "two";
+    src: url("FONTS/two.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "three";
+    src: url("FONTS/three.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "four";
+    src: url("FONTS/four.ttf") format("truetype");
+}
+
+#toTop {
+    background: url("BUTTONS/but.svg") center/cover;
+    width: 8%;
+    height: 8%;
+    text-align: center;
+    padding: 5%;
+    position: fixed;
+    bottom: 10%; /* отступ кнопки от нижнего края страницы*/
+    cursor: pointer;
+    display: block;
+}
+
+    #toTop:hover {
+        background: url("BUTTONS/toTop.svg") center/cover;
+        width: 8%;
+        height: 8%;
+        text-align: center;
+        padding: 5%;
+        position: fixed;
+        bottom: 10%; /* отступ кнопки от нижнего края страницы*/
+        cursor: pointer;
+        display: block;
+    }
+
+body {
+    background-color: black;
+}
+
+.header {
+    text-align: right;
+    color: white;
+    font-family: China;
+    min-width: 10px;
+    font-size: 17px;
+}
+
+.firstPart {
+    align-content: center;
+    margin-bottom: 5%;
+}
+
+.firstTable {
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    margin-top: -4%;
+}
+
+img.myLogo {
+    display: block;
+    margin-left: 0;
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (min-width:200px) and (max-width:526px) {
+    img.myLogo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .header {
+        font-size: 12px;
+    }
+}
+
+.gifAnim {
+    -moz-window-dragging: none;
+    -webkit-user-drag: none;
+    margin-top: -2%;
+    margin-left: 10%;
+    width: 80%;
+    min-height: 500px;
+    max-height: 560px;
+    box-align: left;
+}
+
+@media screen and (min-width:200px) and (max-width:526px) {
+    .gifAnim {
+        min-height: 250px;
+    }
+}
+
+form {
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    -firefox-box-min-width: 100%;
+    -firefox-box-min-height: 100%;
+    font-family: two;
+    min-width: 100%;
+    min-height: 20%;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    background: black;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    font-size: 100%;
+    transition: all 1s ease-out;
+    width: fixed;
+}
+
+    .btn:hover {
+        transition: 0.4s;
+        transform: scale(1.3, 1.3);
+        border-style: solid;
+        border-color: red;
+        border-width: 4px;
+        background: black;
+        width: fixed;
+    }
+
+    .btn:active {
+        background: black;
+        border-color: orangered;
+        border-style: solid;
+        border-width: 4px;
+        color: orangered;
+        width: fixed;
+    }
+
+@media screen and (min-width:200px) and (max-width:526px) {
+    .btn {
+        word-wrap: break-word;
+        font-size: 70%;
+        min-width: 10px;
+        max-width: 30px;
+        min-height: 190px;
+    }
+}
+
+
+.SecondPart {
+    width: 80%;
+    background: white;
+    margin-left: 10%;
+}
+
+.forpart2::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 10px;
+    background-color: rgba(225, 225, 225,0);
+}
+
+.aboutBooks {
+    word-spacing: 10px;
+    padding-top: 10%;
+    font-family: two;
+    text-align: center;
+    font-size: 160%;
+}
+
+.part1 {
+    font-family: four;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 7%;
+    float: left;
+    width: 25%;
+    text-align: justify;
+}
+
+.part2 {
+    font-family: four;
+    margin-right: 5%;
+    float: left;
+    width: 25%;
+    text-align: justify;
+}
+
+.part3 {
+    font-family: four;
+    margin-right: 5%;
+    float: right;
+    width: 25%;
+    text-align: justify;
+}
+
+@media screen and (min-width:200px) and (max-width:526px) {
+    .part1 {
+        font-size: 10px;
+    }
+
+    .part2 {
+        font-size: 10px;
+    }
+
+    .part3 {
+        font-size: 10px;
+    }
+}
+
+h4 {
+    margin-top: 15%;
+    font-family: two;
+    text-align: center;
+}
+
+h5 {
+    margin-top: 15%;
+    font-family: two;
+    text-align: center;
+}
+
+.span1 {
+    width: 9%;
+    height: 0.3%;
+    background: red;
+    margin-left: auto;
+    margin-top: -1%;
+    margin-bottom: 5%;
+    margin-right: auto;
+}
+
+.postersForBook {
+    margin-right: 100%;
+    box-align: center;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img:hover, .img:before, .img:after {
+    opacity: 0.5;
+    content: "lolkek";
+    size: 20%;
+    color: red;
+    text-align: center;
+}
+
+.readOnly {
+    display: inline-block;
+    position: relative;
+}
+
+    .readOnly div {
+        display: none;
+        position: absolute;
+        background-color: rgba(0,0,0,.4);
+        padding: 5px 5px 5px 10px;
+        color: white;
+        font-family: three;
+        font-size: 100%;
+    }
+
+    .readOnly:hover div {
+        display: block
+    }
+
+.thirdPart {
+    margin-top: 10%;
+    width: 80%;
+    margin-left: 10%;
+    color: rgba(245, 245, 245, 0.795);
+}
+
+.infoAboutFilms {
+    margin-bottom: 5%;
+    text-align: center;
+    font-family: two;
+    color: rgb(179, 81, 81);
+}
+
+.aboutFilms {
+    margin-top: 7%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-family: two;
+    color: rgb(179, 81, 81);
+}
+
+.describeforfilms {
+    margin-top: 5%;
+    color: rgba(255, 255, 255, 0.863);
+    font-family: two;
+    text-align: center;
+    word-spacing: 10px;
+}
+
+.textMarg {
+    margin-left: 10%;
+}
+
+video {
+    margin-left: 15%;
+    height: 100%;
+    width: 70%;
+}
+
+.describeForFilm {
+    text-align: right;
+    display: flex;
+    font-family: four;
+    text-indent: 25px;
+    text-align: justify;
+}
+
+.imageForFilm {
+    min-height: 300px;
+    max-height: 400px;
+    width: 50%;
+}
+
+@media screen and (min-width:200px) and (max-width:526px) {
+    .describeforfilms {
+        font-size: 13px;
+    }
+
+    .textMarg {
+        font-size: 10px;
+    }
+}
+
+.FourPart {
+    width: 80%;
+    background: white;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.Posters {
+    padding-top: 2%;
+    font-family: two;
+    text-align: center;
+}
+
+.textForPoster {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    font-family: three;
+}
+
+
+
+.Height-of-div {
+    height: 6%;
+}
+
+.FourPart2 {
+    height: 15%;
+    width: 80%;
+    background: white;
+    margin-left: 10%;
+    margin-top: 530px;
+}
+
+@media screen and (min-width:200px) and (max-width:699px) {
+    .FourPart2 {
+        height: 15%;
+        width: 80%;
+        background: white;
+        margin-top: 230px;
+    }
+}
+
+@media screen and (min-width:700px) and (max-width:768px) {
+    .FourPart2 {
+        height: 15%;
+        width: 80%;
+        background: white;
+        margin-top: 500px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:900px) {
+    .FourPart2 {
+        height: 15%;
+        width: 80%;
+        background: white;
+        margin-top: 550px;
+    }
+}
+
+.LastPart {
+    height: 50%;
+    margin-top: 10%;
+    width: 80%;
+    margin-left: 10%;
+    color: rgba(245, 245, 245, 0.795);
+}
+
+.LastPartTwo {
+    margin-right: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sounds {
+    text-align: center;
+    font-family: two;
+    color: rgb(179, 81, 81);
+}
+
+.aboutSounds {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 100%;
+    text-align: center;
+    font-family: three;
+}
+
+.singleDiv {
+    margin-top: 10%;
+}
+
+.footer-social {
+    float: left;
+    width: 50%;
+    min-height: 40px;
+}
+
+.footer-autor {
+    float: right;
+    width: 50%;
+    min-height: 40px;
+}
+
+.social-btm {
+    margin-right: 20px;
+}
+
+.social {
+    display: flex;
+    margin-left: 20px;
+}
+
+.footer-social, .footer-autor {
+    font-family: "Vremena Medium Italic";
+    font-size: 16px;
+    text-align: center;
+    color: black;
+}
+
+.center {
+    width: 82%;
+    margin-left: 9%;
+    margin-top: 5%;
+    min-height: 20%;
+    padding-top: 5%;
+    background-color: #fff;
+}
+
+.knowNew {
+    font-size: 100%;
+    font-family: four;
+}
+
+.fix::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 0px;
+}
+
+@media screen and (min-width:390px) and (max-width:550px) {
+    .icons {
+        max-width: 24px;
+        max-height: 24px;
+    }
+
+    .center {
+        margin-top: 15%;
+    }
+
+    .knowNew {
+        font-size: 80%;
+    }
+}
+
+@media screen and (min-width:250px) and (max-width:389px) {
+    .icons {
+        max-width: 15px;
+        max-height: 15px;
+    }
+
+    .knowNew {
+        font-size: 80%;
+    }
+
+    .center {
+        margin-top: 30%;
+    }
+}
+
+@media screen and (min-width:700px) {
+    .social {
+        display: flex;
+        margin-left: 29%;
+    }
+}
